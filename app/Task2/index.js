@@ -39,7 +39,7 @@ export default class Task2 extends Component {
 			<div >
 				<ul className="element">
 					{this.state.list.map(item => {
-						return <li key={item.id} data-id={item.id} onMouseEnter={this.handlHoverOn} onMouseLeave={this.handleHoverOff}>
+						return <li key={item.id} data-id={item.id} onMouseOver={this.handlHoverOn} onMouseOut={this.handleHoverOff}>
 							id - {item.id}
 						</li>
 					})}
