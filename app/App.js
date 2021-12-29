@@ -25,11 +25,10 @@ export default class App extends Component {
 					<div className="col">
 						<button onClick={this.toggleList}>
 							button
-							
 						</button>
 					</div>
 				</div>
-				<Task2 />
+				{this.state.showList && <Task2 />}
 			</Fragment>
 		);
 	}
