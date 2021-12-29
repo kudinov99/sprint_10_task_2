@@ -37,9 +37,9 @@ export default class Task2 extends Component {
 	render() {
 		return (
 			<div >
-				<ul className="element">
+				<ul>
 					{this.state.list.map(item => {
-						return <li key={item.id} data-id={item.id} onMouseOver={this.handlHoverOn} onMouseOut={this.handleHoverOff}>
+						return <li key={item.id} className="element" data-id={item.id} onMouseOver={this.handlHoverOn} onMouseOut={this.handleHoverOff}>
 							id - {item.id}
 						</li>
 					})}
